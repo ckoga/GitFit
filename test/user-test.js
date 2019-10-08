@@ -16,5 +16,5 @@ describe('User', () => {
 
   it('should be an instance of User', () => {
     expect(user).to.be.an.instanceof(User);
-  })
+  });
 });
