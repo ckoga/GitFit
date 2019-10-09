@@ -8,7 +8,7 @@ describe('UserRepo', () => {
   let userRepo;
 
   beforeEach(() => {
-  userRepo = new UserRepo(users)
+  userRepo = new UserRepo(users);
   
 
 });
@@ -25,7 +25,7 @@ describe('UserRepo', () => {
     expect(userRepo.users).to.have.a.lengthOf(10);
   });
 
-  describe('getUser', () => {
+  describe('getUser', () => { // ask about describe block for one test
     it('should return a user given an id', () =>{
       expect(userRepo.getUser(2)).to.eql(users[1]);
     });
