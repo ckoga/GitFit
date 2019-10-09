@@ -1,14 +1,14 @@
 const chai = require('chai');
 const expect = chai.expect;
 const UserRepo = require('../src/User-repository');
-const data = require('./user-sample-data');
+const users = require('./user-sample-data');
 
 describe('UserRepo', () => {
 
   let userRepo;
 
   beforeEach(() => {
-  userRepo = new UserRepo(data)
+  userRepo = new UserRepo(users)
   
 
 });
@@ -22,6 +22,16 @@ describe('UserRepo', () => {
   });
 
   it('should store user data', () => {
-    expect(userRepo.usersData).to.have.a.lengthOf(10);
+    expect(userRepo.users).to.have.a.lengthOf(10);
+  });
+
+  describe('getUser', () => {
+    it('should return a user given an id', () =>{
+      expect(userRepo.getUser(2)).to.eql(users[1]);
+    });
+  });
+
+  it('should calculate the average step goal of all users', () => {
+    expect(userRepo.calculateAverageStepGoal()).to.equal(6200)
   });
 });
