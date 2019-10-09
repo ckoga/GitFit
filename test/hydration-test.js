@@ -36,6 +36,6 @@ describe('Hydration', () => {
       { userID: 1, date: '2019/06/21', numOunces: 50 },
       { userID: 1, date: '2019/06/22', numOunces: 43 },
       { userID: 1, date: '2019/06/23', numOunces: 39 }
-    ])
-  })
+    ]);
+  });
 });
