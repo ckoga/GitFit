@@ -3,7 +3,8 @@ class UserRepo {
     this.usersData = usersData;
   }
 
-  
 }
 
-module.exports = UserRepo;
+if (typeof module !== "undefined") {
+  module.exports = UserRepo;
+}
