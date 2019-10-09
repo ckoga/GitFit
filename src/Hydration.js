@@ -12,11 +12,19 @@ class Hydration {
     }, 0) / userHydraData.length).toFixed(1)
   };
 
-  getDailyAverageConsumption(date, id) {
+  getDailyConsumption(date, id) {
     let userHydraData = this.data.filter(user => user.userID === id)
 
-    return userHydraData.find(day = day.date === date);
-  }
+    return userHydraData.find(day => day.date === date).numOunces;
+  };
+
+  getWeekConsumption(date, id) {
+    let userHydraData = this.data.filter(user => user.userID === id);
+
+    let specificDay = userHydraData.findIndex(day => day.date === date);
+
+    return userHydraData.slice(specificDay - 3, specificDay + 4);
+  };
 };
 
 if (typeof module !== 'undefined') {
