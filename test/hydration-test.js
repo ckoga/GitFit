@@ -17,5 +17,9 @@ describe('Hydration', () => {
 
   it('should be an instance of Hydration', () => {
     expect(hydration).to.be.an.instanceof(Hydration);
-  })
+  });
+
+  it('should be able to return the daily average ounces consumed for a given user', () => {
+    expect(hydration.getDailyAverageConsumption(1)).to.equal('58.9')
+  });
 });
