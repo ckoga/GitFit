@@ -32,7 +32,7 @@ describe('Sleep', () => {
       { userID: 1, date: '2019/06/23', hoursSlept: 7.8, sleepQuality: 1.5 },
       { userID: 1, date: '2019/06/24', hoursSlept: 8, sleepQuality: 1.3 },
       { userID: 1, date: '2019/06/25', hoursSlept: 5.1, sleepQuality: 3.7 }
-    ])
+    ]);
   })
 
   it('should be able to get average sleep hours per day for a user', () => {
@@ -51,17 +51,11 @@ describe('Sleep', () => {
     expect(sleep.getSleepQuality('2019/06/20', 1)).to.equal(1.2);
   });
 
-  it('should be able to return 7 days of sleep data', () => {
-    expect(sleep.getWeekHrsSlept('2019/06/20', 1)).to.eql([
-      { userID: 1, date: '2019/06/17', hoursSlept: 8, sleepQuality: 2.6 },
-      {userID: 1, date: '2019/06/18', hoursSlept: 10.4, sleepQuality: 3.1
-      },
-      {userID: 1, date: '2019/06/19', hoursSlept: 10.7, sleepQuality: 1.2
-      },
-      { userID: 1, date: '2019/06/20', hoursSlept: 9.3, sleepQuality: 1.2 },
-      { userID: 1, date: '2019/06/21', hoursSlept: 7.8, sleepQuality: 4.2 },
-      { userID: 1, date: '2019/06/22', hoursSlept: 7, sleepQuality: 3 },
-      { userID: 1, date: '2019/06/23', hoursSlept: 7.8, sleepQuality: 1.5 }
-    ]);
+  it('should be able to return 7 days of hours slept', () => {
+    expect(sleep.getWeekHrsSlept('2019/06/20', 1)).to.eql([8, 10.4, 10.7, 9.3, 7.8, 7, 7.8]);
+  });
+
+  it('should be able to return 7 days of sleep quality', () => {
+    expect(sleep.getWeekSleepQual('2019/06/20', 1)).to.eql([ 2.6, 3.1, 1.2, 1.2, 4.2, 3, 1.5]);
   });
 });
