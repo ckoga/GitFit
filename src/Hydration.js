@@ -3,19 +3,18 @@ class Hydration {
     this.data = data;
   }
 
-  getDailyAverageConsumption(id) {
-    let userHydraData = this.data.filter(user => user.userID === id)
+  getUserData(id) {
+    return this.data.filter(data => data.userID === id);
+  };
 
-    return (userHydraData.reduce((acc, day) => {
-      acc += day.numOunces
-      return acc
-    }, 0) / userHydraData.length).toFixed(1)
+  getDailyAverageConsumption(id) {
+    return (this.getUserData(id).reduce((acc, day) => {
+      return acc += day.numOunces
+    }, 0) / this.getUserData(id).length).toFixed(1)
   };
 
   getDailyConsumption(date, id) {
-    let userHydraData = this.data.filter(user => user.userID === id)
-
-    return userHydraData.find(day => day.date === date).numOunces;
+    return this.getUserData(id).find(day => day.date === date).numOunces;
   };
 
   getWeekConsumption(date, id) {
