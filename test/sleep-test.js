@@ -38,4 +38,12 @@ describe('Sleep', () => {
   it('should be able to get average sleep hours per day for a user', () => {
     expect(sleep.getAverageHoursSlept(1)).to.equal('7.7')
   });
+
+  it('should return the average sleep quality for a user', () => {
+    expect(sleep.getAverageSleepQuality(1)).to.equal('2.5')
+  });
+
+  it('should be able to return hours slept for a specific day', () => {
+    expect(sleep.getHoursSlept('2019/06/20', 1)).to.equal(6.1);
+  })
 });

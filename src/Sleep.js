@@ -8,12 +8,18 @@ class Sleep {
   };
 
   getAverageHoursSlept(id) {
-    let userSleepData = this.getUserData(id);
-    
-    return (userSleepData.reduce((acc, day) => {
-      acc += day.hoursSlept;
-      return acc
-    }, 0) / userSleepData.length).toFixed(1)
+    return (this.getUserData(id).reduce((acc, day) => {
+      return acc += day.hoursSlept;
+    }, 0) / this.getUserData(id).length).toFixed(1)
+  };
+
+  getAverageSleepQuality(id) {
+    return (this.getUserData(id).reduce((acc, day) => {
+     return acc += day.sleepQuality
+    }, 0) / this.getUserData(id).length).toFixed(1)
+  };
+
+  getHoursSlept(date, id) {
   }
 
 };
