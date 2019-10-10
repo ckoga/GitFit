@@ -27,7 +27,13 @@ class Sleep {
     return this.getUserData(id).find(day => day.date === date).sleepQuality;
   };
 
-  
+  getWeekHrsSlept(date, id) {
+    let userSleepData = this.getUserData(id).filter(user => user.userID === id);
+    
+    let specificDay = userSleepData.findIndex(day => day.date === date);
+
+    return userSleepData.slice(specificDay - 3, specificDay + 4);
+  };
 
 };
 
