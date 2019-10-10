@@ -20,7 +20,14 @@ class Sleep {
   };
 
   getHoursSlept(date, id) {
-  }
+    return this.getUserData(id).find(day => day.date === date).hoursSlept;
+  };
+
+  getSleepQuality(date, id) {
+    return this.getUserData(id).find(day => day.date === date).sleepQuality;
+  };
+
+  
 
 };
 
