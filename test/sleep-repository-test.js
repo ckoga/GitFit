@@ -37,4 +37,18 @@ describe('SleepRepo', () => {
       '10': [ 4.4, 3.6, 3.8, 3.1, 1.1, 2.5, 1.7 ]
     });
   });
+
+  it('should be able to find the user or users that slept the longest', () => {
+    expect(sleepRepo.getMostHrsSlept('2019/06/20')).to.eql([
+      {userID: 2, date: '2019/06/20', hoursSlept: 10.1, sleepQuality: 2.4},
+      {userID: 5, date: '2019/06/20', hoursSlept: 10.1, sleepQuality: 3.5}
+    ]);
+  });
+
+  it('should be able to find the user or users that slept the longest', () => {
+    expect(sleepRepo.getMostHrsSlept('2019/06/15')).to.eql([
+      {date: "2019/06/15", hoursSlept: 10.8,sleepQuality: 4.7, userID: 3} 
+    ]);
+  });
+
 });
