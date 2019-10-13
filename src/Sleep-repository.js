@@ -31,6 +31,16 @@ class SleepRepo {
     // })
   }
 
+  getMostHrsSlept(date) {
+    let day = this.data.filter(day => day.date === date);
+    let sleepRankings = day.sort((a, b) => b.hoursSlept - a.hoursSlept)
+    if (sleepRankings[0].hoursSlept === sleepRankings[1].hoursSlept) {
+      return [ sleepRankings[0], sleepRankings[1] ]
+    } else {
+      return [ sleepRankings[0] ]
+    }
+  };
+
 };
 
 if (typeof module !== 'undefined') {
