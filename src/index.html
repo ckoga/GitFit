@@ -7,37 +7,50 @@
   <body>
     <header class="header">
       <h1 class="header__h1">Activity Tracker</h1>
-      <h2 class="header__p">Welcome<span class="header__span" id="current-user">Name!</span></h3>
+      <h2 class="header__p">Welcome <span class="header__span" id="current-user"> Name!</span></h2>
     </header>
     <div class="div__step">
-      <h3 class="div__h3">Your Step Goal Today</h3>
+      <h2 class="div__h3">Your Step Goal Today</h2>
       <p class="div__p" id="step-goal">#</p>
       <p class="div__p" id="avg-step-goal">#</p>
     </div>
     <div class="div__water">
-      <h3 class="div__h3">Your Water Consumption Today</h3>
+      <h2 class="div__h3">Your Water Consumption Today</h2>
       <p class="div__p" id="oz-consumed">#</p>
     </div>
     <div class="div__active">
-      <h3 class="div__h3">Your Activity Today</h3>
-      <p class="div__p" id="min-active">#</p>
-      <p class="div__p" id="avg-min-active">#</p>
+      <h2 class="div__h3">Your Activity Today</h2>
+      <h3 class="div__h3">Step Count Today</h3>
       <p class="div__p" id="step-count">#</p>
-      <p class="div__p" id="avg-step-count">#</p>
+      <h3 class="div__h3">Minutes Active Today</h3>
+      <p class="div__p" id="min-active">#</p>
+      <h3 class="div__h3">Stairs Climbed Today</h3>
       <p class="div__p" id="stairs-climbed">#</p>
+      <h3 class="div__h3">Average Step Count Today</h3>
+      <p class="div__p" id="avg-step-count">#</p>
+      <h3 class="div__h3">Average Minutes Active Today</h3>
+      <p class="div__p" id="avg-min-active">#</p>
+      <h3 class="div__h3">Average Stairs Climebed Today</h3>
       <p class="div__p" id="avg-stairs-climbed">#</p>
+      <h3 class="div__h3">Distance Walked Today</h3>
       <p class="div__p" id="miles-walked">#</p>
+      
+      
+      
+      <p class="div__p" id="avg-stairs-climbed">#</p>
+      
     </div>
     <div class="div__sleep">
-      <h3 class="div__h3">Your Sleep Data Today</h3>
+      <h2 class="div__h3">Your Sleep Data Today</h2>
       <p class="div__p" id="hours-slept">#</p>
       <p class="div__p" id="sleep-qual">#</p>
     </div>
     <div class="div__7days">
-      <h3 class="div__h3">Week</h3>
+      <h2 class="div__h3">Week</h2>
       <p class="div__p">#</p>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../data/users.js"></script>
     <script type="text/javascript" src="../data/hydration.js"></script>
     <script type="text/javascript" src="../data/sleep.js"></script>
@@ -48,7 +61,7 @@
     <script type="text/javascript" src="../src/Sleep.js"></script>
     <script type="text/javascript" src="../src/Sleep-repository.js"></script>
     <script type="text/javascript" src="../src/Activity.js"></script>
-    <script type="text/javascript" src="../src/Activity-repositroy.js"></script>
+    <script type="text/javascript" src="../src/Activity-repository.js"></script>
     <script type="text/javascript" src="./scripts.js"></script>
   </body>
 </html>
