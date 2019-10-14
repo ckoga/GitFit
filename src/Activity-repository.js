@@ -8,12 +8,16 @@ class ActivityRepo {
   }
 
   getAvgStairsClimbed(date) {
-  let day = this.getDay(date);
-
-  return (day.reduce((acc, user) => acc += user.flightsOfStairs , 0) / day.length).toFixed(1);
+    return (this.getDay(date).reduce((acc, user) => acc += user.flightsOfStairs , 0) / this.getDay(date).length).toFixed(1);
   };
 
-  getAvgStepsTaken(date) {}
+  getAvgStepsTaken(date) {
+    return (this.getDay(date).reduce((acc, user) => acc += user.numSteps, 0) / this.getDay(date).length).toFixed(1);
+  };
+
+  getAvgMinActive(date) {
+    return (this.getDay(date).reduce((acc, user) => acc += user.minutesActive, 0) / this.getDay(date).length).toFixed(1)
+  }
 }
 
 if (typeof module !== 'undefined') {

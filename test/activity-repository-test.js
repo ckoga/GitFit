@@ -40,6 +40,10 @@ describe('Activity-repo', () => {
   });
 
   it('should be able to calculate the average number of steps taken for a specific date', () => {
-    expect(activityRepo.getAvgStepsTaken('2019/06/20')).to.equal('12312')
+    expect(activityRepo.getAvgStepsTaken('2019/06/20')).to.equal('8711.6')
+  });
+
+  it('should be able to calculate the average number of minutes active for a specific date', () => {
+    expect(activityRepo.getAvgMinActive('2019/06/20')).to.equal('180.6')
   })
 })
