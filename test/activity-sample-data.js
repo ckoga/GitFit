@@ -770,3 +770,5 @@ const activityData = [
     "flightsOfStairs": 39
   }
 ];
+
+module.exports = activityData;

@@ -14,5 +14,9 @@
     "eslint": "^5.16.0",
     "mocha": "^6.1.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "chai-spies": "^1.0.0",
+    "chart.js": "^2.8.0",
+    "jquery": "^3.4.1"
+  }
 }

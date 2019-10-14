@@ -5,7 +5,38 @@
     <title>Activity Tracker</title>
   </head>
   <body>
-    <h1>Activity Tracker</h1>
+    <header class="header">
+      <h1 class="header__h1">Activity Tracker</h1>
+      <h2 class="header__p">Welcome<span class="header__span" id="current-user">Name!</span></h3>
+    </header>
+    <div class="div__step">
+      <h3 class="div__h3">Your Step Goal Today</h3>
+      <p class="div__p" id="step-goal">#</p>
+      <p class="div__p" id="avg-step-goal">#</p>
+    </div>
+    <div class="div__water">
+      <h3 class="div__h3">Your Water Consumption Today</h3>
+      <p class="div__p" id="oz-consumed">#</p>
+    </div>
+    <div class="div__active">
+      <h3 class="div__h3">Your Activity Today</h3>
+      <p class="div__p" id="min-active">#</p>
+      <p class="div__p" id="avg-min-active">#</p>
+      <p class="div__p" id="step-count">#</p>
+      <p class="div__p" id="avg-step-count">#</p>
+      <p class="div__p" id="stairs-climbed">#</p>
+      <p class="div__p" id="avg-stairs-climbed">#</p>
+      <p class="div__p" id="miles-walked">#</p>
+    </div>
+    <div class="div__sleep">
+      <h3 class="div__h3">Your Sleep Data Today</h3>
+      <p class="div__p" id="hours-slept">#</p>
+      <p class="div__p" id="sleep-qual">#</p>
+    </div>
+    <div class="div__7days">
+      <h3 class="div__h3">Week</h3>
+      <p class="div__p">#</p>
+    </div>
 
     <script type="text/javascript" src="../data/users.js"></script>
     <script type="text/javascript" src="../data/hydration.js"></script>
