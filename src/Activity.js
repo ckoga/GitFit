@@ -17,9 +17,10 @@ class Activity {
   }
 
   calculateMilesWalked(date, id) {
-    let user = this.userData.find(user => user.id === id);
+    console.log(this.userData)
+    // let user = this.userData.find(user => user.id === id);
 
-    return parseFloat((user.strideLength * this.getUser(date, id).numSteps) / 5280).toFixed(1);
+    return parseFloat((this.userData.strideLength * this.getUser(date, id).numSteps) / 5280).toFixed(1);
   };
 
   getMinActive(date, id) {
