@@ -44,6 +44,6 @@ describe('Activity-repo', () => {
   });
 
   it('should be able to calculate the average number of minutes active for a specific date', () => {
-    expect(activityRepo.getAvgMinActive('2019/06/20')).to.equal('180.6')
-  })
-})
+    expect(activityRepo.getAvgMinActive('2019/06/20')).to.equal('180.6');
+  });
+});

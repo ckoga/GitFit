@@ -12,6 +12,10 @@ class Activity {
     return this.getDay(date).find(user => user.userID === id);
   };
 
+  getUserStepsToday(date, id) {
+    return this.getUser(date, id).numSteps;
+  }
+
   calculateMilesWalked(date, id) {
     let user = this.userData.find(user => user.id === id);
 
