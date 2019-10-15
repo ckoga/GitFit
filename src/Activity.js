@@ -12,10 +12,14 @@ class Activity {
     return this.getDay(date).find(user => user.userID === id);
   };
 
-  calculateMilesWalked(date, id) {
-    let user = this.userData.find(user => user.id === id);
+  getUserStepsToday(date, id) {
+    return this.getUser(date, id).numSteps;
+  }
 
-    return parseFloat((user.strideLength * this.getUser(date, id).numSteps) / 5280).toFixed(1);
+  calculateMilesWalked(date, id) {
+    // let user = this.userData.find(user => user.id === id);
+
+    return parseFloat((this.userData.strideLength * this.getUser(date, id).numSteps) / 5280).toFixed(1);
   };
 
   getMinActive(date, id) {

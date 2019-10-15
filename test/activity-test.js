@@ -47,6 +47,10 @@ describe('Activity', () => {
       { userID: 1, date: '2019/06/20', numSteps: 14478, minutesActive: 140, flightsOfStairs: 12 });
   });
 
+  it('should be able to get the users number of steps', ()  => {
+    expect(activity.getUserStepsToday('2019/06/20', 1)).to.equal(14478)
+  });
+
   it('should be able to calculate miles walked', () => {
     expect(activity.calculateMilesWalked('2019/06/20', 1)).to.equal('11.8');
   });
@@ -79,4 +83,6 @@ describe('Activity', () => {
   it('should be able to find a users all time stair climbing record', () => {
     expect(activity.getStairRecord(1)).to.equal(36)
   });
+
+  
 })
