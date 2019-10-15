@@ -12,7 +12,7 @@ function getRandomNumber() {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-console.log(user)
+
 $('.header__span').html(`${user.getName()}!`);
 $('#step-goal').html(user.dailyStepGoal);
 $('#avg-step-goal').html(users.calculateAverageStepGoal());

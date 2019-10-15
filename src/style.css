@@ -8,6 +8,7 @@ body {
   background-color: #393939;
   color: #ffffff;
   display: grid;
+  font-family: 'Roboto', sans-serif;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
@@ -36,38 +37,81 @@ body {
   text-align: center;
 }
 
+#header h1 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#header h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#header span {
+  font-weight: 700;
+}
+
 #step {
+  color: green;
   border: 1px solid green;
   grid-area: step;
 }
 
 #water {
+  color: skyblue;
   border: 1px solid skyblue;
   grid-area: water;
 }
 
 #active {
-  border: 1px solid lawngreen;
+  color: lawngreen;
   grid-area: activity;
   display: flex;
 }
 
+.div__step,
+.div__minActiv,
+.div__stairs,
+.div__miles {
+  border: 1px solid lawngreen;
+}
+
 #sleep {
-  border: 1px solid rebeccapurple;
+  color: rgb(128, 0, 255);
+  border: 1px solid rgb(128, 0, 255);
   grid-area: sleep;
 }
 
 #week {
+  color: tomato;
   border: 1px solid tomato;
   grid-area: week;
+  align-content: center;
 }
 
 #week li {
   list-style: none;
   float: left;
-  margin: 10px;
+  margin: 0 5px 0 8px;
 }
 
 div {
   text-align: center;
 }
+
+.div__h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.div__p {
+  font-size: 30px;
+  font-weight: 700;
+  height: 40px;
+  margin: 5px 0
+}
+
+/* h3 {
+  font-weight: lighter;
+} */
