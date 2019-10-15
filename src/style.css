@@ -1,0 +1,53 @@
+*,
+*:after,
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    'header header header header header header header header header header'
+    'header header header header header header header header header header'
+    '. . . . . . . . . .'
+    '. step step . water water . sleep sleep .'
+    '. step step . water water . sleep sleep .'
+    '. step step . water water . sleep sleep .'
+    '. . . . . . . . . .'
+    '. activity activity activity . . week week week .'
+    '. activity activity activity . . week week week .'
+    '. activity activity activity . . week week week .';
+    margin: 0;
+    height: 100vh;
+}
+
+#header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: center;
+}
+
+#step {
+  grid-area: step;
+}
+
+#water {
+  grid-area: water;
+}
+
+#active {
+  grid-area: activity;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+#sleep {
+  grid-area: sleep;
+}
+
+#week {
+  grid-area: week;
+}

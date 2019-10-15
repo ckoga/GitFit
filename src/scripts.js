@@ -17,4 +17,4 @@ $('.header__span').html(`${user.getName()}!`);
 $('#step-goal').html(user.dailyStepGoal);
 $('#avg-step-goal').html(users.calculateAverageStepGoal());
 $('#oz-consumed').html(`${usersHydration.getDailyConsumption('2019/06/20', 1)}oz`);
-// $('#step-count').html()
+$('#step-count').html()
