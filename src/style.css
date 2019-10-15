@@ -5,49 +5,69 @@
 }
 
 body {
+  background-color: #393939;
+  color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
     'header header header header header header header header header header'
-    'header header header header header header header header header header'
+    /* 'header header header header header header header header header header' */
     '. . . . . . . . . .'
-    '. step step . water water . sleep sleep .'
-    '. step step . water water . sleep sleep .'
-    '. step step . water water . sleep sleep .'
+    '. step step . activity activity activity activity activity .'
+    '. step step . activity activity activity activity activity .'
+    '. step step . activity activity activity activity activity .'
     '. . . . . . . . . .'
-    '. activity activity activity . . week week week .'
-    '. activity activity activity . . week week week .'
-    '. activity activity activity . . week week week .';
+    '. water . sleep . week week week week .'
+    '. water . sleep . week week week week .'
+    '. water . sleep . week week week week .'
+    '. . . . . . . . . .';
     margin: 0;
     height: 100vh;
 }
 
 #header {
+  align-items: center;
+  border-bottom: 1px solid white;
   grid-area: header;
   display: flex;
   justify-content: space-between;
-  vertical-align: center;
+  padding: 0 15px;
+  text-align: center;
 }
 
 #step {
+  border: 1px solid green;
   grid-area: step;
 }
 
 #water {
+  border: 1px solid skyblue;
   grid-area: water;
 }
 
 #active {
+  border: 1px solid lawngreen;
   grid-area: activity;
   display: flex;
-  /* flex-wrap: wrap; */
 }
 
 #sleep {
+  border: 1px solid rebeccapurple;
   grid-area: sleep;
 }
 
 #week {
+  border: 1px solid tomato;
   grid-area: week;
+}
+
+#week li {
+  list-style: none;
+  float: left;
+  margin: 10px;
+}
+
+div {
+  text-align: center;
 }
