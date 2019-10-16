@@ -3,7 +3,7 @@ let currentUser = users.getUser(getRandomNumber());
 let user = new User(currentUser);
 const usersHydration = new Hydration(hydrationData, user);
 const userSleep = new Sleep(sleepData, user); 
-const userActivity = new Activity(activityData, user);
+const userActivity = new Activity(activityData, userData);
 const usersActivityRepo = new ActivityRepo(activityData);
 
 function getRandomNumber() {
