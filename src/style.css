@@ -19,9 +19,9 @@ body {
     '. step step . activity activity activity activity activity .'
     '. step step . activity activity activity activity activity .'
     '. . . . . . . . . .'
-    '. water . sleep . week week week week week'
-    '. water . sleep . week week week week week'
-    '. water . sleep . week week week week week'
+    '. water . sleep . week week week week .'
+    '. water . sleep . week week week week .'
+    '. water . sleep . week week week week .'
     '. . . . . . . . . .';
     margin: 0;
     height: 100vh;
@@ -39,7 +39,7 @@ body {
 
 #header h1 {
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 #header h2 {
@@ -113,7 +113,34 @@ div {
   font-size: 30px;
   font-weight: 700;
   height: 40px;
-  margin: 5px 0
+  margin: 5px 0;
+}
+
+.div__week {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 1px;
+  margin-top: 50px;
+}
+
+.week__p {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  position: absolute;
+  margin: 14px 0 0 225px;
+}
+
+.div__step,
+.div__sleep,
+.div__minActiv,
+.div__stairs {
+  padding-top: 16px;
+}
+
+.div__water,
+.div__miles {
+  padding-top: 50px
 }
 
 /* h3 {
