@@ -128,14 +128,14 @@ div {
   font-size: 18px;
   font-weight: 300;
   position: absolute;
-  margin: 10px 0 0 225px;
+  margin: 14px 0 0 225px;
 }
 
 .div__step,
 .div__sleep,
 .div__minActiv,
 .div__stairs {
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 .div__water,
