@@ -80,6 +80,7 @@ body {
   color: rgb(128, 0, 255);
   border: 1px solid rgb(128, 0, 255);
   grid-area: sleep;
+  padding: 22% 2%;
 }
 
 #week {
@@ -104,12 +105,12 @@ div {
 
 .div__h3 {
   color: white;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 300;
 }
 
 .div__p {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 700;
   height: 40px;
   margin: 5px 0;
@@ -131,7 +132,7 @@ div {
 }
 
 .div__step,
-.div__sleep,
+/* .div__sleep, */
 .div__minActiv,
 .div__stairs {
   padding: 3% 2%;
