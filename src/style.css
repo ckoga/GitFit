@@ -86,7 +86,7 @@ body {
   color: tomato;
   display: flex;
   grid-area: week;
-  align-content: center;
+  justify-content: space-between;
 }
 
 .div__7days {
@@ -95,7 +95,6 @@ body {
 
 #week li {
   list-style: none;
-  /* float: left; */
   margin: 0 5px 0 8px;
 }
 
@@ -119,7 +118,7 @@ div {
 .div__week {
   font-size: 24px;
   font-weight: 700;
-  padding: 1px;
+  padding: 1%;
   margin-top: 50px;
 }
 
@@ -128,19 +127,19 @@ div {
   font-size: 18px;
   font-weight: 300;
   position: absolute;
-  margin: 14px 0 0 225px;
+  margin: 1% 16%;
 }
 
 .div__step,
 .div__sleep,
 .div__minActiv,
 .div__stairs {
-  padding-top: 16px;
+  padding: 3% 2%;
 }
 
 .div__water,
 .div__miles {
-  padding-top: 50px
+  padding: 50px 10px 0 10px;
 }
 
 /* h3 {
