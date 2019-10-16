@@ -65,6 +65,35 @@ class Activity {
     }, {})
   };
 
+  getWeekStep(date, id) {
+    let userData = this.data.filter(data => data.userID === id)
+
+    let specificDay = userData.findIndex(day => day.date === date);
+
+    let subset =userData.slice(specificDay - 3, specificDay + 4)
+
+    return subset.map(data => data.numSteps)
+  };
+
+  getWeekStairs(date, id) {
+    let userData = this.data.filter(data => data.userID === id)
+
+    let specificDay = userData.findIndex(day => day.date === date);
+
+    let subset = userData.slice(specificDay - 3, specificDay + 4)
+
+    return subset.map(data => data.flightsOfStairs)
+  };
+
+  getWeekMinActv(date, id) {
+    let userData = this.data.filter(data => data.userID === id)
+
+    let specificDay = userData.findIndex(day => day.date === date);
+
+    let subset = userData.slice(specificDay - 3, specificDay + 4)
+
+    return subset.map(data => data.minutesActive)
+  }
 
 }
 

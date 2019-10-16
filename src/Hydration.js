@@ -22,7 +22,9 @@ class Hydration {
 
     let specificDay = userHydraData.findIndex(day => day.date === date);
 
-    return userHydraData.slice(specificDay - 3, specificDay + 4);
+    let subset = userHydraData.slice(specificDay - 3, specificDay + 4);
+
+    return subset.map(data => data.numOunces)
   };
 };
 
