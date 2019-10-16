@@ -19,9 +19,9 @@ body {
     '. step step . activity activity activity activity activity .'
     '. step step . activity activity activity activity activity .'
     '. . . . . . . . . .'
-    '. water . sleep . week week week week .'
-    '. water . sleep . week week week week .'
-    '. water . sleep . week week week week .'
+    '. water . sleep . week week week week week'
+    '. water . sleep . week week week week week'
+    '. water . sleep . week week week week week'
     '. . . . . . . . . .';
     margin: 0;
     height: 100vh;
@@ -84,14 +84,18 @@ body {
 
 #week {
   color: tomato;
-  border: 1px solid tomato;
+  display: flex;
   grid-area: week;
   align-content: center;
 }
 
+.div__7days {
+  border: 1px solid tomato;
+}
+
 #week li {
   list-style: none;
-  float: left;
+  /* float: left; */
   margin: 0 5px 0 8px;
 }
 

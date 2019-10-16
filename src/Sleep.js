@@ -33,7 +33,7 @@ class Sleep {
     let specificDay = userSleepData.findIndex(day => day.date === date);
 
     let week = userSleepData.slice(specificDay - 3, specificDay + 4);
-
+    
     return week.map(day => day.hoursSlept)
   };
 
@@ -43,7 +43,7 @@ class Sleep {
     let specificDay = userSleepData.findIndex(day => day.date === date);
 
     let week = userSleepData.slice(specificDay - 3, specificDay + 4);
-
+    
     return week.map(day => day.sleepQuality);
   }
 

@@ -44,14 +44,6 @@ describe('Hydration', () => {
   });
 
   it('should be able to return 7 days of consumption data', () => {
-    expect(hydration.getWeekConsumption('2019/06/20', 1)).to.eql([
-      { userID: 1, date: '2019/06/17', numOunces: 96 },
-      { userID: 1, date: '2019/06/18', numOunces: 61 },
-      { userID: 1, date: '2019/06/19', numOunces: 91 },
-      { userID: 1, date: '2019/06/20', numOunces: 50 },
-      { userID: 1, date: '2019/06/21', numOunces: 50 },
-      { userID: 1, date: '2019/06/22', numOunces: 43 },
-      { userID: 1, date: '2019/06/23', numOunces: 39 }
-    ]);
+    expect(hydration.getWeekConsumption('2019/06/20', 1)).to.eql([ 96, 61, 91, 50, 50, 43, 39 ]);
   });
 });

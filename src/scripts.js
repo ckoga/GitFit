@@ -28,11 +28,17 @@ $('#miles-walked').html(userActivity.calculateMilesWalked('2019/06/20', user.id)
 $('#hours-slept').html(userSleep.getHoursSlept('2019/06/20', user.id));
 $('#sleep-qual').html(userSleep.getSleepQuality('2019/06/20', user.id));
 
-function appendHydrationWeek() {
-  let week = usersHydration.getWeekConsumption('2019/06/20', user.id);
-
-  let weekOz = week.map(day => day.numOunces)
-
-  return weekOz.forEach(day => $('#seven-days').append(`<li>${day}oz</li>`))
+function appendWeek(data, element, unit) {
+  return data.forEach(num => $(element).append(`<li>${num}${unit}</li>`))
 }
-appendHydrationWeek()
+appendWeek(usersHydration.getWeekConsumption('2019/06/20', user.id), '.week__water', 'oz');
+appendWeek(userSleep.getWeekHrsSlept('2019/06/20', user.id),'.week__sleep', 'hrs');
+appendWeek(userSleep.getWeekSleepQual('2019/06/20', user.id), '.week__slpQual', 'qal');
+appendWeek(userActivity.getWeekStep('2019/06/20', user.id), '.week__step', 'stps');
+appendWeek(userActivity.getWeekStairs('2019/06/20', user.id), '.week__stairs', 'strs');
+appendWeek(userActivity.getWeekMinActv('2019/06/20', user.id), '.week__minActiv', 'min');
+
+
+
+
+function appendChartHydration() {}

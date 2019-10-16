@@ -84,5 +84,7 @@ describe('Activity', () => {
     expect(activity.getStairRecord(1)).to.equal(36)
   });
 
-  
-})
+  it('should be able to get a week of step data', () => {
+    expect(activity.getWeekStep('2019/06/20', 1)).to.eql([ 14329, 4419, 8429, 14478, 6760, 10289, 13928 ]);
+  });
+});
