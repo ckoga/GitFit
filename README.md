@@ -1,82 +1,14 @@
-# FitLit Starter Kit
+# GitFit Activity Tracker
 
-The details of this project are outline in [this project spec](http://frontend.turing.io/projects/fitlit.html).
+GitFit (previously known as FitLit) is an activity tracking application that is designed to test a developers understanding of prototype methods and TDD.  Given data on 50 users over three months GitFit forces a developer to plan and create classes all while trying to maintain a good TDD work flow.  The emphasis on TDD really helps highlight the importance of good testing, putting the data on the DOM was a lot easier knowing exactly what the output of each method is.  Class planning was vital as well trying to make sure all class were encapsulated but not too tightly bound to other classes.  
 
-## Setup
+### Installation instructions:
+Fork and clone this repo, then run npm install to download: jQuery, Mocha and Chai.  You will also see Chai-spies and Charts.js, two other packages that will be implemented in later.
 
-1. Within your group, decide on one person to have the project repository (repo) on their GitHub account. Then, that person should fork this repo - on the top right corner of this page, click the **Fork** button.
-1. Both memebers of the group should clone down the _forked_ repo. Since you don't want to name your project "activity-tracker-starter", you can use an optional argument when you run git clone (you replace the [...] with the terminal command arguments): `git clone [remote-address] [what you want to name the repo]`
-1. Once you have cloned the repo, change into the directory and install the project dependencies. Run `npm install` to install project dependencies.
-1. Run `open src/index.html` in the terminal to see the HTML page (you should see some boilerplate HTML displayed on the page)
-1. Make sure both members of your team are collaborators on the forked repo.
+### GitFit layout
+![127 0 0 1_5500_src_index html](https://user-images.githubusercontent.com/45470456/67013997-4ccea700-f0b1-11e9-9993-4f525996040b.png)
 
-## Testing
+
+
 
 There is no boilerplate for testing in this starter-kit repo. You will need to set this up yourself. However, if you ran `npm install`, then the tooling you need to start testing is already installed (`mocha` and `chai`).
-
-## Linting Your Code
-
-Run the command in your terminal `npm run lint` to run the linter on your JavaScript code. There will be errors and warnings right from the start in this starter kit, but that's ok - the linter is still running successfully.
-
-Your linter will look only at the JavaScript files you have within the `src` and the `test` directories.
-
-## Data Model
-
-**Users**
-
-```
-[
-  {
-    "id": [number],
-    "name": [string],
-    "address": [string],
-    "email": [string],
-    "strideLength": [number - feet],
-    "dailyStepGoal": [number - steps],
-    "friends": [array - one-way connection to other user(s)]
-  },
-  ...more user data
-]
-```
-
-**Activity**
-
-```
-[
-  {
-    "userID": [number],
-    "date": [string YYYY/MM/DD],
-    "numSteps": [number - steps],
-    "minutesActive": [number - minutes],
-    "flightsOfStairs": [number - flights]
-  },
-  ...more activity data
-]
-```
-
-**Hydration**
-
-```
-[
-  {
-    "userID": [number],
-    "date": [string YYYY/MM/DD],
-    "numOunces": [number - ounces]
-  },
-  ...more hydration data
-]
-```
-
-**Sleep**
-
-```
-[
-  {
-    "userID": [number],
-    "date": [string YYYY/MM/DD],
-    "hoursSlept": [number - hours],
-    "sleepQuality": [number - unitless]
-  },
-  ...more sleep data
-]
-```
