@@ -14,6 +14,7 @@ function getRandomNumber() {
 
 
 $('.header__span').html(`${user.getName()}!`);
+$('.dsply-name').html(`${user.getName()}'s `);
 $('#step-goal').html(user.dailyStepGoal);
 $('#avg-step-goal').html(users.calculateAverageStepGoal());
 $('#oz-consumed').html(`${usersHydration.getDailyConsumption('2019/06/20', user.id)}oz`);
@@ -27,6 +28,8 @@ $('#miles-walked').html(userActivity.calculateMilesWalked('2019/06/20', user.id)
 
 $('#hours-slept').html(userSleep.getHoursSlept('2019/06/20', user.id));
 $('#sleep-qual').html(userSleep.getSleepQuality('2019/06/20', user.id));
+$('#avg-sleep-qual').html(userSleep.getAverageSleepQuality(user.id));
+$('#avg-hrs-slept').html(userSleep.getAverageHoursSlept(user.id))
 
 function appendWeek(data, element, unit) {
   return data.forEach(num => $(element).append(`<li>${num}${unit}</li>`))

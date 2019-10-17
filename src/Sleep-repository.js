@@ -24,11 +24,6 @@ class SleepRepo {
       return acc;
     }, {})
     return usersSleepQual
-    // Object.values(usersSleepQual).forEach(user => {
-    //   if (user.forEach(num => num > 3)) {
-
-    //   }
-    // })
   }
 
   getMostHrsSlept(date) {

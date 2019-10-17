@@ -12,9 +12,9 @@
       <h2 class="header__p">Welcome <span class="header__span" id="current-user"> Name!</span></h2>
     </header>
       <div class="div__step" id="step">
-        <h3 class="div__h3">Your Step Goal Today</h3>
+        <h3 class="div__h3"><span class="dsply-name">Name</span> Goal Today</h3>
         <p class="div__p" id="step-goal">#</p>
-        <h3 class="div__h3">Avg Step Goal for All Users</h3>
+        <h3 class="div__h3">GitFit Average Step Goal</h3>
         <p class="div__p" id="avg-step-goal">#</p>
       </div>
       <div class="div__water" id="water">
@@ -25,19 +25,19 @@
         <div class="div__step">
           <h3 class="div__h3">Step Count for Today</h3>
           <p class="div__p" id="step-count">#</p>
-          <h3 class="div__h3">Avg Step Count Today</h3>
+          <h3 class="div__h3">GitFit Average Step Count Today</h3>
           <p class="div__p" id="avg-step-count">#</p>
         </div>
         <div class="div__minActiv">
           <h3 class="div__h3">Minutes Active Today</h3>
           <p class="div__p" id="min-active">#</p>
-          <h3 class="div__h3">Avg Minutes Active</h3>
+          <h3 class="div__h3">GitFit Average Minutes Active</h3>
           <p class="div__p" id="avg-min-active">#</p>
         </div>
         <div class="div__stairs">
           <h3 class="div__h3">Stairs Climbed Today</h3>
           <p class="div__p" id="stairs-climbed">#</p>
-          <h3 class="div__h3">Avg Stairs Climbed Today</h3>
+          <h3 class="div__h3">GitFit Average Stairs Climbed Today</h3>
           <p class="div__p" id="avg-stairs-climbed">#</p>
         </div>
         <div class="div__miles">
@@ -46,19 +46,43 @@
         </div>
       </div>
       <div class="div__sleep" id="sleep">
-        <h3 class="div__h3">Your Sleep Data Today</h3>
-        <p class="div__p" id="hours-slept">#</p>
-        <h3 class="div__h3">Your Sleep Quality</h3>
-        <p class="div__p" id="sleep-qual">#</p>
+        <div id="sleep1">
+          <h3 class="div__h3"><span class="dsply-name">Name</span>Hours Slept</h3>
+          <p class="div__p" id="hours-slept"></p>
+        </div>
+        <div id="sleep2">
+          <h3 class="div__h3"><span class="dsply-name">Name</span>Sleep Quality</h3>
+          <p class="div__p" id="sleep-qual"></p>
+        </div>
+        <div id="sleep3">
+          <h3 class="div__h3"><span class="dsply-name">Name</span>Average Hours Slept</h3>
+          <p class="div__p" id="avg-hrs-slept"></p>
+        </div>
+        <div id="sleep4">
+          <h3 class="div__h3"><span class="dsply-name">Name</span>Average Sleep Quality</h3>
+          <p class="div__p" id="avg-sleep-qual"></p>
+        </div>
       </div>
       <div class="div__7days" id="week">
-        <p class="week__p">Past Week</p>
-        <div class="week__water div__week"></div>
-        <div class="week__sleep div__week"></div>
-        <div class="week__slpQual div__week"></div>
-        <div class="week__step div__week"></div>
-        <div class="week__stairs div__week"></div>
-        <div class="week__minActiv div__week"></div>
+        <p class="week__p"><span class="dsply-name">Name</span>Past Week</p>
+        <div class="div__week">
+          <ul class="week__water">Water Consumption</ul>
+        </div>
+        <div class="div__week">
+          <ul class="week__sleep">Hours Slept</ul>
+        </div>
+        <div class="div__week">
+          <ul class="week__slpQual">Sleep Quality</ul>
+        </div>
+        <div class="div__week">
+          <ul class="week__step">Steps</ul>
+        </div>
+        <div class="div__week">
+          <ul class="week__stairs">Flights of Stairs</ul>
+        </div>
+        <div class="div__week">
+          <ul class="week__minActiv">Minutes Active</ul>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
