@@ -8,7 +8,3 @@ Fork and clone this repo, then run npm install to download: jQuery, Mocha and Ch
 ### GitFit layout
 ![127 0 0 1_5500_src_index html](https://user-images.githubusercontent.com/45470456/67013997-4ccea700-f0b1-11e9-9993-4f525996040b.png)
 
-
-
-
-There is no boilerplate for testing in this starter-kit repo. You will need to set this up yourself. However, if you ran `npm install`, then the tooling you need to start testing is already installed (`mocha` and `chai`).
