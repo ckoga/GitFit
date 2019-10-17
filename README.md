@@ -10,3 +10,4 @@ Fork and clone this repo, then run npm install to download: jQuery, Mocha and Ch
 ### GitFit layout
 ![127 0 0 1_5500_src_index html](https://user-images.githubusercontent.com/45470456/67013997-4ccea700-f0b1-11e9-9993-4f525996040b.png)
 
+*Note git revert command will not help you get back to your 20 year old self, go GitFit!
