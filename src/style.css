@@ -9,20 +9,20 @@ body {
   color: #ffffff;
   display: grid;
   font-family: 'Roboto', sans-serif;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: 
-    'header header header header header header header header header header'
-    /* 'header header header header header header header header header header' */
-    '. . . . . . . . . .'
-    '. step step . activity activity activity activity activity .'
-    '. step step . activity activity activity activity activity .'
-    '. step step . activity activity activity activity activity .'
-    '. . . . . . . . . .'
-    '. water . sleep . week week week week .'
-    '. water . sleep . week week week week .'
-    '. water . sleep . week week week week .'
-    '. . . . . . . . . .';
+    'header header header header header'
+    'step step activity activity activity'
+    'step step activity activity activity'
+    'step step activity activity activity'
+    'water water sleep sleep sleep'
+    'water water sleep sleep sleep'
+    'water water sleep sleep sleep'
+    'week week week week week'
+    'week week week week week'
+    'week week week week week'
+    'week week week week week';
     margin: 0;
     height: 100vh;
 }
@@ -67,82 +67,69 @@ body {
   color: lawngreen;
   grid-area: activity;
   display: flex;
-}
-
-.div__step,
-.div__minActiv,
-.div__stairs,
-.div__miles {
+  justify-content: space-evenly;
   border: 1px solid lawngreen;
 }
 
 #sleep {
-  color: rgb(128, 0, 255);
-  border: 1px solid rgb(128, 0, 255);
+  color: #8d03ff;
+  border: 1px solid #8d03ff;
+  display: flex;
   grid-area: sleep;
+  justify-content: space-evenly;
+  
 }
 
 #week {
-  color: tomato;
-  display: flex;
   grid-area: week;
-  align-content: center;
+  justify-content: space-evenly;
+  height: max-content;
+  width: auto;
 }
 
 .div__7days {
-  border: 1px solid tomato;
+  border: 1px solid goldenrod;
+  height: max-content;
 }
 
 #week li {
+  color: goldenrod;
   list-style: none;
-  /* float: left; */
-  margin: 0 5px 0 8px;
+}
+
+#week ul {
+  color: wheat;
+  font-size: 1em;
+  margin: 10% 10%;
+  padding: 0% 10%;
 }
 
 div {
   text-align: center;
+  padding-top: 2%;
 }
 
 .div__h3 {
   color: white;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 300;
+  margin-top: 10%;
 }
 
 .div__p {
-  font-size: 30px;
+  font-size: 2em;
   font-weight: 700;
-  height: 40px;
-  margin: 5px 0;
 }
 
 .div__week {
+  display: inline-block;
   font-size: 24px;
   font-weight: 700;
-  padding: 1px;
-  margin-top: 50px;
+
 }
 
 .week__p {
   color: white;
   font-size: 18px;
   font-weight: 300;
-  position: absolute;
-  margin: 14px 0 0 225px;
 }
-
-.div__step,
-.div__sleep,
-.div__minActiv,
-.div__stairs {
-  padding-top: 16px;
-}
-
-.div__water,
-.div__miles {
-  padding-top: 50px
-}
-
-/* h3 {
-  font-weight: lighter;
-} */
